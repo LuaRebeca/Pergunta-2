@@ -1,0 +1,24 @@
+
+    class Calculadora {
+    public int somar(int a, int b) {
+        return a + b;
+    }
+
+    public int somar(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public double somar(double a, double b) {
+        return a + b;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculadora calc = new Calculadora();
+
+        System.out.println(calc.somar(5, 10));          // Chama a Versão 1 (Saída: 15)
+        System.out.println(calc.somar(2, 3, 4));        // Chama a Versão 2 (Saída: 9)
+        System.out.println(calc.somar(5.5, 4.2));       // Chama a Versão 3 (Saída: 9.7)
+    }
+}
